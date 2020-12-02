@@ -20,7 +20,7 @@
     }
     body{
         width: 100%;
-        font-family: 'Archivo Black', sans-serif;
+        font-family: 'Archivo Black', sans-serif;overflow-x: hidden;width: 100vw;
 
 
     
@@ -39,11 +39,23 @@
 .nav img{
     width:80px;
     height: 80px;margin: 10px;
-}.leaf{
-    position: absolute;
-    bottom: 0%;width: 110%;transform: translate(0%,-50%);
 }
-.leaf img{
+.leaf{
+    width: 100%;overflow: hidden;
+}
+.leaf2{
+    position: absolute;overflow: hidden;
+    /* transform: translate(50%,0%); */
+    bottom: -10%;width:30%;height:70vh;left: 80%;z-index: 9999;
+}
+.leaf2 img{overflow: hidden;
+    width: 100%;
+}
+.leaf1{overflow: hidden;
+    position: absolute;
+    bottom: -10%;width:50%;height:70vh;left: -20%;z-index: 9999;
+}
+.leaf1 img{overflow: hidden;
     width: 100%;
 }
     .section1
@@ -154,8 +166,34 @@ height: 40vh;z-index: 99;
     position: relative;left: 0%;transform: translate(-50%,0%);
 }
     @media only screen and (max-width: 600px) {
+        body{width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .leaf{
+    width: 100%;overflow-x: hidden;
+}
+
+.leaf2{
+    position: absolute;
+    overflow-x: hidden;
+    /* transform: translate(50%,0%); */
+    bottom: -50%;width:50%;height:100vh;left: 70%;z-index: 9999;transform: translate(0%,-50px);
+}
+.leaf2 img{overflow: hidden;
+    width: 100%;height: 100vh;
+}
+.leaf1{
+    overflow: hidden;
+    position: absolute;
+    bottom: -50%;width:50%;height:100vh;left: -15%;z-index: 9999;
+    bottom: -50%;width:50%;height:100vh;left: -15%;z-index: 9999;transform: translate(0%,-50px);
+}
+.leaf1 img{overflow: hidden;
+    width: 100%;height: 100vh;
+}
 h1{
-    font-size: 28px;margin-bottom: 10px;z-index:9999;
+    font-size: 28px;margin-bottom: 10px;
 }
 .card:nth-child(even){
 flex-direction: column;
@@ -169,7 +207,7 @@ flex-direction: column;
 }
 
 .card a{
-    font-size: 15px;
+    font-size: 10px;
     margin: -10px;
 }
 .section1,.section2,.section3,.section4,.section5,.section6,.section6{
@@ -253,12 +291,18 @@ height: 20vh;transform: translate(-10%,10%);
 <div class="mainimage">
     <img src="img/kstar.svg" alt="">
 </div>
-<!-- <img src="img/leaf.svg" alt="" class="leaf"> -->
 
+<div class="leaf">
 
+    <img src="img/leaf1.svg" alt="" class="leaf1">
+    
+    <img src="img/leaf2.svg" alt="" class="leaf2">
+         
+    </div>
       </div>
- 
+
     <div class="section2">
+        
         <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute;top:0%;" viewBox="0 0 1440 320"><path fill="#5d1d77" fill-opacity="1" d="M0,192L30,165.3C60,139,120,85,180,53.3C240,21,300,11,360,21.3C420,32,480,64,540,106.7C600,149,660,203,720,224C780,245,840,235,900,192C960,149,1020,75,1080,48C1140,21,1200,43,1260,64C1320,85,1380,107,1410,117.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
         <div class="card">
         <div class="content"  >
@@ -411,7 +455,7 @@ height: 20vh;transform: translate(-10%,10%);
 
         <hr style="width: 90%;height: 3px;background-color:#FFD700;margin: auto;border:none;">
         <br>
-        <h1 class="footer" style="color: #FFD700;text-align: center;">Designed By Kreative Eye | Developed By Konnexions | Powered by KIIT Digital</h1>
+        <h3 class="footer" style="color: #FFD700;text-align: center;">Designed By Kreative Eye | Developed By Konnexions | Powered by KIIT Digital</h3>
     <br>
     </div>
 
